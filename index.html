@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section class="container">
+        <form class="container">
+            <label for="Name1">Введите ваше имя</label>
+            <input type="text" name="Name1" id="Name1">
+            <label for="Name2">Введите имя вашей пары</label>
+            <input type="text" name="Name2" id="Name2">
+            <button type="button" name="btnlove" onclick="lovecalculator(this.name)">Calculate</button>
+        </form>
+        <h1></h1>
+    </section>
+    <form name="bmiForm">
+        Ваш вес(кг): <input type="text" name="weight" size="10"><br />
+        Ваш рост(см): <input type="text" name="height" size="10"><br />
+        <input type="button" value="Рассчитать ИМТ" onClick="calculateBmi()"><br />
+        Ваш ИМТ: <input type="text" name="bmi" size="10"><br />
+        Это значит: <input type="text" name="meaning" size="25"><br />
+        <input type="reset" value="Сброс" />
+    </form>
+    <br>
+    <form name = "yearForm">
+        Введите год: <input type="text" name="year" size="4"><br />
+        <input type="button" value="Високосный ли год?"onClick="visokos()" ><br />
+        <input type="text" name="resultyear">
+    </form>
+    <br>
+    <form name="dinnerForm">
+        Кто ужинает (через пробел): <input type="text" name="guests" size="40"><br />
+        <input type="button" value="Кто платит?" onClick="WhoPays()"><br />
+        <input type="text" name="resultdinner">
+    </form>
+    <script src="scripts/script.js"></script>
+</body>
+</html> 
